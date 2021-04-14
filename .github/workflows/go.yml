@@ -44,6 +44,18 @@ jobs:
         cp main.go dist/
         GOOS=$goos GOARCH=$goarch go build -v -o dist/shots .
         zip -j -r release dist
+        
+    - name: Get url to upload to release from output
+      env:
+        url: ${{ steps.create_release.outputs.upload_url }}
+      run: |
+        mkdir artifact
+        echo $url > artifact/url.txt
+    - name: Upload artifact to share url with other jobs
+      uses: actions/upload-artifact@v1
+      with:
+        name: artifact
+        path: artifact/url.txt
     - name: Download artifact to get url to upload to release
       uses: actions/download-artifact@v2
       with:
