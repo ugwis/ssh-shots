@@ -1,2 +1,2 @@
 # ssh-shots
-ssh-shots sends config to routers / switches in single binary.
+ssh-shots sends config to routers / switches in a single binary.
