@@ -1,2 +1,2 @@
-# ssh-injector
-ssh-injector sends config to routers / switches in single binary.
+# ssh-shots
+ssh-shots sends config to routers / switches in single binary.
