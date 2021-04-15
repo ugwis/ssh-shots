@@ -5,7 +5,7 @@ ssh-shots sends config to routers / switches in a single binary.
 
 
 # Usage
-Shots in with an password
+Shots in with a password
 ```
 ./shots --pass password user host startup.conf
 ```
