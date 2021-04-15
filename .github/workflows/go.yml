@@ -3,7 +3,9 @@ name: Go
 on:
   push:
     tags:
-      - *
+      - v*
+      - latest
+      - stable
 
 jobs:
   test:
