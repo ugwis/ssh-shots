@@ -3,8 +3,7 @@ name: Go
 on:
   push:
     tags:
-      - v*
-      - latest
+      - *
 
 jobs:
   test:
