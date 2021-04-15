@@ -5,11 +5,11 @@ ssh-shots sends config to routers / switches in a single binary.
 
 
 # Usage
-Login in with an Password
+Shot in with an Password
 ```
 ./shots -pass password user host startup.conf
 ```
-Login in with an SSH Private Key
+Shot in with an SSH Private Key
 ```
 ./shots -i ~/.ssh/id_rsa.pem user host startup.conf
 ```
